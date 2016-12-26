@@ -1,3 +1,2 @@
 # My Personal Website!
-This is my online webaddress. 
 Contact me for starter trainings on python and how to get started with it!
