@@ -104,7 +104,7 @@ a {
     padding: 1%;
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     span {
         display: none;
     }
