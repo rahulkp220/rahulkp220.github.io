@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background: #100E17;
+    color: white;
+}
+
+.bg , .bg2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bg {
+    -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+    clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+    z-index: -1;
+    background: #28242F
+    
+}
+
+.bg2 {
+    z-index: -2;
+    -webkit-clip-path: polygon(65% 69%, 100% 9%, 100% 100%, 5% 100%);
+    clip-path: polygon(65% 69%, 100% 9%, 100% 100%, 5% 100%);
+    background: linear-gradient(#28242F,#17141D );
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+}
+
+ul {
+    list-style-type: none;
+    perspective: 1000px;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: 20% auto;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transform: rotateY(-30deg) rotateX(15deg);
+    position: static;
+    border-bottom: 4px solid rgba(0,0,0,.2);
+    mix-blend-mode: screen;
+    transition: transform .2s ease-in;
+}
+
+img {
+    width: 70px;
+}
+
+#profile {
+    width: 150px;
+    border-radius: 50%;
+    padding: 2%;
+    background-color: #201C29;
+    border: 2px solid #201C29;
+}
+
+a {
+    padding: 0.75%;
+}
+
+ul li:nth-child(1){
+    background: #201C29;
+    top: -105px;
+    z-index: 2;
+}
+
+ul li:nth-child(2){
+    background: #201C29;
+    z-index: 1;
+}
+
+ul li:nth-child(3){
+    background: #201C29;
+    top: 105px;
+}
+
+
+ul li:hover{
+    transform: rotateY(-22deg) rotateX(15deg) scale(1.01);
+    z-index: 3;
+    mix-blend-mode: normal;
+}
+
+a {
+    color: whitesmoke;
+    margin: 3px;
+    padding: 1%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    span {
+        display: none;
+    }
+}
