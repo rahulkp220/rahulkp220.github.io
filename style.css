@@ -34,29 +34,12 @@ body {
 }
 
 .container {
+    text-align: center;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 100% auto;
     height: auto;
     align-self: center;
     margin: 0 50px;
-}
-
-ul {
-    list-style-type: none;
-    perspective: 1000px;
-}
-
-ul li {
-    display: grid;
-    grid-template-columns: 20% auto;
-    border-radius: 10px;
-    padding: 15px;
-    cursor: pointer;
-    transform: rotateY(-30deg) rotateX(15deg);
-    position: static;
-    border-bottom: 4px solid rgba(0,0,0,.2);
-    mix-blend-mode: screen;
-    transition: transform .2s ease-in;
 }
 
 img {
@@ -73,32 +56,6 @@ img {
 
 a {
     padding: 0.75%;
-}
-
-ul li:nth-child(1){
-    background: #201C29;
-    top: -105px;
-    z-index: 2;
-}
-
-ul li:nth-child(2){
-    background: #201C29;
-    z-index: 1;
-}
-
-ul li:nth-child(3){
-    background: #201C29;
-    top: 105px;
-}
-
-
-ul li:hover{
-    transform: rotateY(-22deg) rotateX(15deg) scale(1.01);
-    z-index: 3;
-    mix-blend-mode: normal;
-}
-
-a {
     color: whitesmoke;
     margin: 3px;
     padding: 1%;
